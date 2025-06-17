@@ -16,13 +16,35 @@ return {
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
-  -- {
-  -- 	"nvim-treesitter/nvim-treesitter",
-  -- 	opts = {
-  -- 		ensure_installed = {
-  -- 			"vim", "lua", "vimdoc",
-  --      "html", "css"
-  -- 		},
-  -- 	},
-  -- },
+  {
+  	"nvim-treesitter/nvim-treesitter",
+  	opts = {
+  		ensure_installed = {
+  			"vim", "lua", "vimdoc",
+       "cpp", "cmake"
+  		},
+  	},
+  },
+
+  -- CMakeTools
+  {
+    "Civitasv/cmake-tools.nvim",
+    lazy = false,
+    config = function()
+      require "configs.cmake-tools"
+    end,
+  },
+
+  {
+    'stevearc/overseer.nvim',
+     lazy = false,
+     opts = {},
+  },
+
+  {
+    'akinsho/toggleterm.nvim', 
+    version = "*",
+    lazy = false, 
+    config = true
+  }
 }
