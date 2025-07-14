@@ -17,7 +17,7 @@ require("cmake-tools").setup {
     return "out/${variant:buildType}"
   end, -- this is used to specify generate directory for cmake, allows macro expansion, can be a string or a function returning the string, relative to cwd.
   cmake_compile_commands_options = {
-    action = "soft_link", -- available options: soft_link, copy, lsp, none
+    action = "lsp", -- available options: soft_link, copy, lsp, none
                           -- soft_link: this will automatically make a soft link from compile commands file to target
                           -- copy:      this will automatically copy compile commands file to target
                           -- lsp:       this will automatically set compile commands file location using lsp
