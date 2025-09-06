@@ -1,8 +1,11 @@
-**This repo is supposed to used as config by NvChad users!**
+**This repo contains personal nvim config for C++ development. It is based on NvChad config.**
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+Features:
+- LSP
+- Debug
+- Gen for LLM integration
+
+For LLM integration you can set environment variables OLLAMA_MODEL and OLLAMA_SERVER.
 
 # Credits
 
